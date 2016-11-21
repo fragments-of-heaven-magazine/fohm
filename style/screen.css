@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+/* Keep reset CSS to one minified line */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+
+
+/* ===== BASE STYLES ===== */
+
+/*
+  Setting type to a " " modular scale
+  http://www.modularscale.com/
+*/
+
+html {
+  font-size: ;
+  line-height: ; /* = 1 gridline*/
+  background-color: ;
+  color: ;
+ 
+}
+
+h1 {
+  font-size: ; 
+  line-height: ; 
+}
+
+
+p {
+  padding-top: ; 
+  padding-bottom: ;
+}
+
+li {
+  padding-left: ; 
+  padding-bottom: ; 
+}
+
+ul {
+  padding-left: ; 
+  padding-bottom: ; 
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
+
+img,
+video {
+  display: block;
+  max-width: ;
+}
+
+/* ===== LAYOUT STYLES ===== */
+
+#page {
+  padding-top: ;
+  padding-left: ;
+  padding-right: ;
+}
+
+
+/* Navigation */
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+nav {
+  font-weight: 200;
+}
+
+.nav {
+  margin-left: 0;
+  padding-bottom: 0;
+}
+
+.nav li {
+  float: left;
+  width: ;
+  list-style-type: none;
+  padding-bottom: 0;
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  line-height: 1;
+  padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
+  background-color: ;
+  color:;
+  border-bottom: 0;
+}
+
+/* ===== MODULAR STYLES ===== */
+
+ul {
+  list-style-type: disc;
+}
+
+.backup li {
+  list-style-type: circle;
+}
+
+.nav li a {
+  text-decoration: none;
+}
+
+/* ===== STATE STYLES ===== */
+
+
+
+@media screen and (min-width: ) {
+
+}
+
+
