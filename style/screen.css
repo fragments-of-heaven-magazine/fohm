@@ -46,7 +46,7 @@ ul {
 }
 
 li:last-child {
-  padding-bottom: 0;
+  padding-bottom: ;
 }
 
 img,
@@ -67,56 +67,55 @@ video {
 /* Navigation */
 
 nav {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: block;
+  position: ;
+  width: ;
+  top: ;
+  left: ;
+  display: ;
 }
 
 nav {
-  font-weight: 200;
+  font-weight: ;
 }
 
 .nav {
-  margin-left: 0;
-  padding-bottom: 0;
+  margin-left: ;
+  padding-bottom: ;
 }
 
 .nav li {
-  float: left;
+  display: inline-block;
+  float: ;
   width: ;
-  list-style-type: none;
-  padding-bottom: 0;
+  list-style-type: ;
+  padding-bottom: ;
 }
 
 .nav a {
-  display: block;
-  text-align: center;
-  line-height: 1;
-  padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
+  display: ;
+  text-align: ;
+  line-height: ;
+  padding: /*0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
   background-color: ;
   color:;
-  border-bottom: 0;
+  border-bottom: ;
 }
 
 /* ===== MODULAR STYLES ===== */
 
 ul {
-  list-style-type: disc;
+  list-style-type: ;
 }
 
-.backup li {
-  list-style-type: circle;
+ li {
+  list-style-type: ;
 }
 
-.nav li a {
-  text-decoration: none;
+.nav ul li a {
+  text-decoration: ;
 }
 
 /* ===== STATE STYLES ===== */
-
-
 
 @media screen and (min-width: ) {
 
