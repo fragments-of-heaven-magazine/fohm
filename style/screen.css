@@ -52,7 +52,7 @@ li:last-child {
 img,
 video {
   display: block;
-  max-width: ;
+  max-width: 30%;
 }
 
 /* ===== LAYOUT STYLES ===== */
