@@ -12,27 +12,28 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== BASE STYLES ===== */
 
 /*
-  Setting type to a " " modular scale
-  http://www.modularscale.com/
+  Setting type to a "1.2" modular scale
+  http://www.modularscale.com/?18&px&1.2&web&text
 */
 
 html {
-  font-size: ;
+  font-family: "Georgia", Monaco, sans-serif;
+  font-size: 18px;
   line-height: ; /* = 1 gridline*/
-  background-color: ;
-  color: ;
+  background-color: #9fdfff;
+  color:#ffffff;
  
 }
 
 h1 {
-  font-size: ; 
+  font-size: 31.984px; 
   line-height: ; 
 }
 
 
 p {
-  padding-top: ; 
-  padding-bottom: ;
+  padding-top: 18px; 
+  padding-bottom: 18px ;
 }
 
 li {
@@ -49,10 +50,16 @@ li:last-child {
   padding-bottom: ;
 }
 
-img,
-video {
+img {
   display: block;
-  max-width: 30%;
+  max-width: 40%;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -63,42 +70,15 @@ video {
   padding-right: ;
 }
 
-
-/* Navigation */
-
-nav {
-  position: ;
-  width: ;
-  top: ;
-  left: ;
-  display: ;
+img {
+  margin-left: auto;
+  margin-right: auto 
 }
 
-nav {
-  font-weight: ;
-}
-
-.nav {
-  margin-left: ;
-  padding-bottom: ;
-}
-
-.nav li {
-  display: inline-block;
-  float: ;
-  width: ;
-  list-style-type: ;
-  padding-bottom: ;
-}
-
-.nav a {
-  display: ;
-  text-align: ;
-  line-height: ;
-  padding: /*0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
-  background-color: ;
-  color:;
-  border-bottom: ;
+figcaption {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
 }
 
 /* ===== MODULAR STYLES ===== */
@@ -111,14 +91,41 @@ ul {
   list-style-type: ;
 }
 
-.nav ul li a {
-  text-decoration: ;
+.navigation ul li {
+  float: left;
+  padding: 1.222em;
+  padding-left: 0.917em;
+  border-bottom: 0;
+  font-size: 0.741em; /*13.333px/18px*/
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
 }
 
+.navigation ul li a {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  margin-left: -0.917em;
+}
+.navigation ul li:first-child {
+  margin-left: 0.917em;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+}
 /* ===== STATE STYLES ===== */
 
-@media screen and (min-width: ) {
+/* 768px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 1.44em; /*23.04px @ 16px*/
+    line-height: 1.2em; /*27.648px @ 23.04px*/
+  }
 
-}
+  .navigation ul li {
+    font-size: 1em; /*16px*/
+  }
 
 
