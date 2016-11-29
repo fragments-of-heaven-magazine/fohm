@@ -9,20 +9,20 @@
   </head>
   <body>
     <header id="header">
-      <nav>
-        <ul class = "navigation">
+      <nav class="navigation">
+        <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/Contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <main class="summary">
-    <figure class = "photo">
-    <picture>
+    <main id="page">
+    <figure>
+    <picture class="photo">
       <img src="../img/cover.png" alt="Image of Magazine Cover"/>
     </picture>
     <figcaption>
-        <p>Most Recent Issue</p>
+      <p>Most Recent Issue</p>
     </figcaption>
     </figure>
     <section>
@@ -37,18 +37,22 @@
       </p> 
     </section>
     <section>
+      <p>Below is a form to fill to submit your art work(poems, drawings etc). All file submissions must be in .png, .jpeg or pdf format. 
+      </p>
+    </section>
+    <section>
       <form id=”submission”>
         <p>
           <label for=”yourName”>Name</label>
-          <input id=”yourName” name=”Name” value=””>
+          <input id=”yourName” name=”Name” type="name">
         </p>
         <p>
           <label for=”psuName”>Pseudo Name</label>
-          <input id=”psuName” name=”Pseudo_Name” value=””>
+          <input id=”psuName” name=”Pseudo_Name” type="pseudo">
         </p>
         <p>
           <label for=”yourTitle”>Title</label>
-          <input id=”yourTitle” name=”Title” value=””>
+          <input id=”yourTitle” name=”Title” type="title">
         </p>
         <p>
           <label for=”yourFile”>File for submission</label>
@@ -62,8 +66,8 @@
         <p>Your browser does not support this audio.</p>
         </audio> -->
     <footer id = "footer">
-      <p>Site Design by "..."
-      Copyright &copy; 2016 "". All Rights Reserved</p>
+      <p>Site Design by Erin, Ore and Antoine
+      &copy; 2016 "FoHM". All Rights Reserved.</p>
     </footer>
     </main>
   </body>

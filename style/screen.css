@@ -19,9 +19,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-family: "Georgia", Monaco, sans-serif;
   font-size: 18px;
-  line-height: ; /* = 1 gridline*/
+  line-height: 22px; /* 120% of the font-size*/
   background-color: #9fdfff;
-  color:#ffffff;
+  color: #222; /*#ffffff;*/
  
 }
 
@@ -65,21 +65,23 @@ nav {
 /* ===== LAYOUT STYLES ===== */
 
 #page {
-  padding-top: ;
-  padding-left: ;
-  padding-right: ;
+  padding-top: 18px; /*line height*/
+  padding-left: 11px;
+  padding-right: 11px; /*half of line height*/
 }
 
 img {
+  padding-top: 18px;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto; 
 }
 
 figcaption {
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
+  text-align: center;
 }
+
 
 /* ===== MODULAR STYLES ===== */
 
@@ -106,10 +108,10 @@ ul {
   display: block;
   text-decoration: none;
   color: #222;
-  margin-left: -0.917em;
+  
 }
 .navigation ul li:first-child {
-  margin-left: 0.917em;
+  margin-left: 0;
 }
 
 .navigation ul li a:hover {
