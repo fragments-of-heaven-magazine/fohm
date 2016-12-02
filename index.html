@@ -7,68 +7,55 @@
     <link rel="stylesheet" media="screen" href="style/screen.css" />
       <!--<link rel="stylesheet" href="http://basehold.it/18">way to test lines-->
   </head>
+
   <body>
     <header id="header">
-      <nav class="navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/Contact">Contact Us</a></li>
-        </ul>
-      </nav>
+      <title>Fragments of Heaven</title>
     </header>
+
     <main id="page">
-    <figure>
-    <picture class="photo">
-      <img src="img/cover.png" alt="Image of Magazine Cover"/>
-    </picture>
-    <figcaption>
-      <p>Most Recent Issue</p>
-    </figcaption>
-    </figure>
-    <section>
-      <h1>Purpose</h1>
-      <p>The purpose of the literary arts magazine (Fragments of Heaven) is to share the creative works 
-      of individuals with other creative people in order to spark idea, and also to showcase beautiful works 
-      to the general public. We aspire to promote creativity among individuals and to help dissipate 
-      artist/creator/ shyness and boost confidence among individuals. We also want to help individual artist
-      /creators become more well-known, either in their local communities or online, and become a resource to 
-      help them perfect their craft, build their portfolios, and help to build their fan-base. We also want to 
-      be a consistent literary arts magazine that is open to the general public.
-      </p> 
-    </section>
-    <section>
-      <p>Below is a form to fill to submit your art work(poems, drawings etc). All file submissions must be in .png, .jpeg or pdf format. 
-      </p>
-    </section>
-    <section>
-      <form id=”submission”>
-        <p>
-          <label for=”yourName”>Name</label>
-          <input id=”yourName” name=”Name” type="name">
+      <figure>
+        <picture class="photo">
+          <img src="img/cover.png" alt="Image of Magazine Cover"/>
+        </picture>
+        <figcaption>
+          <p>Most Recent Issue</p>
+        </figcaption>
+      </figure>
+
+      <section>
+        <h1>Purpose</h1>
+        <p>The purpose of the literary arts magazine (Fragments of Heaven) is to share the creative works 
+        of individuals with other creative people in order to spark idea, and also to showcase beautiful works 
+        to the general public. We aspire to promote creativity among individuals and to help dissipate 
+        artist/creator/ shyness and boost confidence among individuals. We also want to help individual artist
+        /creators become more well-known, either in their local communities or online, and become a resource to 
+        help them perfect their craft, build their portfolios, and help to build their fan-base. We also want to 
+        be a consistent literary arts magazine that is open to the general public.
+        </p> 
+      </section>
+
+      <section>
+        <p>Below is a tool used to find inspiration. Please enter any word or words that pique your
+        interest, and we'll do our best to provide an image to spark your creative juices
         </p>
-        <p>
-          <label for=”psuName”>Pseudo Name</label>
-          <input id=”psuName” name=”Pseudo_Name” type="pseudo">
-        </p>
-        <p>
-          <label for=”yourTitle”>Title</label>
-          <input id=”yourTitle” name=”Title” type="title">
-        </p>
-        <p>
-          <label for=”yourFile”>File for submission</label>
-          <input id=”yourFile” name=”Submission_File” type=”file”>
-        </p>
-        <button>Submit</button>
+      </section>
+
+
+      <form id="inspire" name="inspire" method="get" action="#null">
+        <label for="inspiration">Enter your word(s) of choice:</label>
+        <input id="inspiration" type="text" name="inpiration" />
+        <input id="inspire-me" type="submit" name="inspire-me" value="Search for inspiration" />
       </form>
-    </section>
-    <!--<audio controls preload="none">
-          <source src= "" type=""/> 
-        <p>Your browser does not support this audio.</p>
-        </audio> -->
-    <footer id = "footer">
-      <p>Site Design by Erin, Ore and Antoine
-      &copy; 2016 "FoHM". All Rights Reserved.</p>
-    </footer>
+     
+      <div id="inpirational"></div>
+
+      <footer id="footer">
+        <p>Site Design by Erin, Ore and Antoine
+        &copy; 2016 "FoHM". All Rights Reserved.</p>
+      </footer>
+
     </main>
+  <script src="js/fohm.js"></script>
   </body>
 </html>
