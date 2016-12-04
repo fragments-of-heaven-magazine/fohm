@@ -5,7 +5,7 @@
     <meta charset= "utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
     <link rel="stylesheet" media="screen" href="style/screen.css" />
-    <script src="https://api.gettyimages.com/v3/"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
       <!--<link rel="stylesheet" href="http://basehold.it/18">way to test lines-->
   </head>
@@ -13,9 +13,10 @@
   <body>
     <header id="header">
       <title>Fragments of Heaven: Birds Edition</title>
+
     </header>
 
-    <main id="page">
+    <main>
 
  <section>
         <h1>Fragments of Heaven</h1>
@@ -30,34 +31,23 @@
         </p> 
       </section>
 
-
+<!-- Get person's name in form, and spit name out back with -->
     
       <figure>
         <picture class="photo">
           <img src="img/cover.png" alt="Image of Magazine Cover"/>
         </picture>
         <figcaption>
-          <p>Birds Edition</p>
+          <p>Get Inspired</p>
         </figcaption>
       </figure>
 
-     
 
-      <section>
-        <p>Below is a search bar used to find information on any bird. Search up any species you'd like,
-         and you'll be able to find information regarding it to spark some inspiration!
-        </p>
-      </section>
-
-
-      <form id="bird" name="bird" method="get" action="#null">
-        <label for="bird">Enter your winged champion (aka a bird name)</label>
-        <input id="bird type="text" name="bird" />
-        <input id="birdSearch" type="submit" name="birdSearch" value="Search for a bird" />
+      <form id="name" name="name" method="get" action="#null">
+        <label for="name">Enter your name.</label>
+        <input id="bird" type="text" name="bird" />
+        <input id="birdSubmit" type="submit" name="birdSubmit" value="Search for a bird" />
       </form>
-     
-      <p id="name"></p>
-      <div id="birdy"></div>
 
       <footer id="footer">
         <p>Site Design by Erin, Ore and Antoine.
