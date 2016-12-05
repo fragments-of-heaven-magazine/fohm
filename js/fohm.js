@@ -8,8 +8,8 @@ $(document).ready(function() {
         var q = data[0];
         console.log(q.content);
         console.log(q.title);
-        $('#primary').append(q.content)
-         $('#username').append(query)
+        $('#primary').html(q.content)
+         $('#username').html( 'Hello, ' +query + '! Your inspirational quote is below!')
         });
     event.preventDefault();
 });
