@@ -7,127 +7,136 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-
-
 /* ===== BASE STYLES ===== */
 
 /*
-  Setting type to a "1.2" modular scale
+  Setting style to a minor third (5:6) modular scale
   http://www.modularscale.com/?18&px&1.2&web&text
 */
 
 html {
-  font-family: "Georgia", Monaco, sans-serif;
-  font-size: 18px;
-  line-height: 22px; /* 120% of the font-size*/
-  background-color: #9fdfff;
-  color: #222; /*#ffffff;*/
- 
+  font-size: 1.125em; /* 18px/16px */
+  line-height: 1.222em; /* 22px /18px */
+  background-color: #B0C4DE;/*#778899;*/
+  color: #222;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 31.984px; 
-  line-height: ; 
+  font-size: 1.28em; /* 23.04px/18px */
+  line-height: 1.536em; /* 27.648px @ 23.04px */
+  font-weight: bold;
 }
 
+h2 {
+  font-size: 1.067em; /* 19.2px/18px */
+  line-height: 1.28em; /* 23.04px @ 19.2px */
+  font-weight: bold;
+}
 
 p {
-  padding-top: 18px; 
-  padding-bottom: 18px ;
+  padding-top: 0; 
+  padding-bottom: 1.222em; /*22px*/
 }
 
-li {
-  padding-left: ; 
-  padding-bottom: ; 
-}
-
-ul {
-  padding-left: ; 
-  padding-bottom: ; 
-}
-
-li:last-child {
-  padding-bottom: ;
-}
-
-img {
-  display: block;
-  max-width: 40%;
-}
-
-nav {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
 
 /* ===== LAYOUT STYLES ===== */
 
 #page {
-  padding-top: 18px; /*line height*/
-  padding-left: 11px;
-  padding-right: 11px; /*half of line height*/
+  padding: 1.222em; /* 22px 16.5px */
+  padding-top: 0; /*22px*/
 }
 
-img {
-  padding-top: 18px;
-  margin-left: auto;
-  margin-right: auto; 
+.purpose {
+  padding-top: 1.222em;
 }
-
-figcaption {
-  margin-left: auto;
-  margin-right: auto;
+.form {
+  background-color: #DEB887;
+  border-radius: 0.3em; 
+  padding: 1.222em 0.917em;; /* 22px 16.5px */
+  padding-top: 0; /*22px*/
   text-align: center;
 }
 
-
-/* ===== MODULAR STYLES ===== */
-
-ul {
-  list-style-type: ;
-}
-
- li {
-  list-style-type: ;
-}
-
-.navigation ul li {
-  float: left;
-  padding: 1.222em;
-  padding-left: 0.917em;
-  border-bottom: 0;
-  font-size: 0.741em; /*13.333px/18px*/
-  text-transform: uppercase;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.navigation ul li a {
-  display: block;
+a {
   text-decoration: none;
   color: #222;
-  
-}
-.navigation ul li:first-child {
-  margin-left: 0;
 }
 
-.navigation ul li a:hover {
+a:hover {
   text-decoration: underline;
 }
+
+input[type="text"] {
+  border: 0.1em solid #B0C4DE;
+  border-radius: 0.6em;
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+input[type="submit"] {
+  border: 0.1em solid #B0C4DE;
+  border-radius: 0.6em;
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+header {
+  background: url(../img/cover.png) center center #49311c;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding: 6em;
+}
+
+footer {
+  background-color: #dedede; /*#7C635E;*/
+  font-size: 0.741em; /*13.333px/18px*/
+  text-align: center;
+  padding-top: 1.222em;
+  padding-bottom: 1.222em;
+}
+
 /* ===== STATE STYLES ===== */
 
-/* 768px @ 16px for tablet/ipad scale */
-@media screen and (min-width: 48em) {
+/* 5:6 */
+/*5 + 6 = 11
+768 / 11.5px = 66.8
+5 x 66.8 = 334px Grid 1
+6 x 66.8 = 400.8px Grid 2
+
+1224 / 11.5px = 106.4px
+5 x 106.4px = 532px Grid 1
+6 x 106.4px = 638.4px Grid 2
+*/
+
+
+/* 700px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 43.75em) {
   html {
     font-size: 1.44em; /*23.04px @ 16px*/
     line-height: 1.2em; /*27.648px @ 23.04px*/
   }
 
-  .navigation ul li {
-    font-size: 1em; /*16px*/
+  .purpose {
+    width: 43.49%; /*334/768 = 0.4349*/
   }
 
+  .mission {
+    width: 43.49%; /*334/768 = 0.4349*/
+  }
+}
+
+/* 1224px @ 16px for desktop/laptop scale */
+@media screen and (min-width: 76.5em) {
+  
+  }
+  
 
