@@ -7,7 +7,6 @@
     <link rel="stylesheet" media="screen" href="style/screen.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/fohm.js"></script>
-
       <!--<link rel="stylesheet" href="http://basehold.it/18">way to test lines-->
   </head>
 
@@ -19,7 +18,7 @@
 
     <main>
 
-<!-- <section>
+ <section>
         <h1>Fragments of Heaven</h1>
         <h2>Purpose</h2>
         <p>The purpose of the literary arts magazine (Fragments of Heaven) is to share the creative works 
@@ -30,10 +29,10 @@
         help them perfect their craft, build their portfolios, and help to build their fan-base. We also want to 
         be a consistent literary arts magazine that is open to the general public. 
         </p> 
-      </section> -->
+      </section> 
 
 <!-- Get person's name in form, and spit name out back with -->
-<!--    
+   
       <figure>
         <picture class="photo">
           <img src="img/cover.png" alt="Image of Magazine Cover"/>
@@ -42,17 +41,29 @@
           <p>Get Inspired</p>
         </figcaption>
       </figure>
--->
 
-<!-- id="go" -->
+      <p class="random">Enter your name for your random daily quote<p>
       <form id="name-form" name="name-form" method="get" action="#null">
-        <label for="namelabel">Enter your name.</label>
+        <label for="namelabel">Enter your name:</label>
         <input type="text" id="namelabel" name="namelabel" /> 
       <input type="submit" id="go" name="go" value="Retrieve your quote" />
       </form>
-      <div id="username"></div>
-      <div id="primary"></div>
-      
+
+
+<!-- The commented out code will be used with an additional API that has endpoints
+so that the user can actually search up quotes by specific people or through keywords. -->
+
+   <!--   <p class="search">Enter a word and search for a relating quote<p>
+
+      <form id="quote-form" name="quote-form" method="get" action="#null">
+        <label for="quotelabel">Enter a word:</label>
+        <input type="text" id="quotelabel" name="quotelabel" /> 
+      <input type="submit" id="inspire" name="inspire" value="Find your quote" />
+      </form> -->
+
+      <p id="username"></p>
+      <p id="primary"></p>
+  <!--    <p id="secondary"></p> -->
 
       <footer id="footer">
         <p>Site Design by Erin, Ore and Antoine.
