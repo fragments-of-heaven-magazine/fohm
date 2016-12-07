@@ -51,17 +51,23 @@ p {
 .purpose {
   padding-top: 1.222em;
 }
+
+.get{
+  padding-top: 1.222em;
+}
+
 .form {
   background-color: #DEB887;
   border-radius: 0.3em;
   padding: 1.222em 0.917em;; /* 22px 16.5px */
   padding-top: 0; /*22px*/
+  padding-bottom: 0;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #222;
+  color: #2898A9;
 }
 
 a:hover {
@@ -69,14 +75,14 @@ a:hover {
 }
 
 input[type="text"] {
-  border: 0.1em solid #B0C4DE;
+  border: 0.1em solid #2B112E;
   border-radius: 0.6em;
   text-align: center;
   -webkit-appearance: none;
 }
 
 input[type="submit"] {
-  border: 0.1em solid #B0C4DE;
+  border: 0.1em solid #2B112E;
   border-radius: 0.6em;
   text-align: center;
   -webkit-appearance: none;
@@ -133,10 +139,3 @@ footer {
     width: 43.49%; /*334/768 = 0.4349*/
   }
 }
-
-/* 1224px @ 16px for desktop/laptop scale */
-/*@media screen and (min-width: 76.5em) {
-
-}*/
-
-
