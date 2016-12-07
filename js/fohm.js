@@ -15,23 +15,21 @@ $(document).ready(function() {
     event.preventDefault();
 });
 
-
-  $('#quote_form').on('submit', function(event2) {
+ /*  $('#quote_form').on('submit', function(event2) {
    var query = $('#quotelabel').val();
    $.get(
-    'http://quotes.rest/qod.js?category=' + query,
+    'http://horoscope-api.herokuapp.com/horoscope/today/' + query,
     function(data) {
       var p = data[0];
 
-      $('#secondary').html(p.quote);
-      $('#bname').html('By: ' +p.author);
-      $('#qtitle').html(p.title);
-      $('#background').html('<img src="' +p.background +'" alt="An inspiring image"/>');
+      $('#secondary').html(p.horoscope);
+      $('#bname').html('Date: ' +p.date);
+      $('#qtitle').html('Sunsign: ' sunsign);
       });
 
     event2.preventDefault();
-});
+}); */
+
 
 }); 
-
 
