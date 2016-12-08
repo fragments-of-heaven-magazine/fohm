@@ -1,14 +1,17 @@
 //TODO: Use a function closure and release global $
+
+$.noConflict();
+(function($) {
 $(document).ready(function() {
   $('#quote_form').on('submit', function(event) {
-      var query = $('#quotelabel').val();
-        var urL = 'http://horoscope-api.herokuapp.com/horoscope/today/' + query;
+    var query = $('#quotelabel').val();
+    var urL = 'http://horoscope-api.herokuapp.com/horoscope/today/' + query;
         $.ajax({
           type: 'GET',
-          url: urL,
           dataType: 'jsonp',
+          url: urL,
           success: function(data) {
-            $('#secondary').html(data.horoscope);
+            $('#secondary').append(data.horoscope);
             $('#bname').html('Date: ' +data.date);
             $('#qtitle').html('Sunsign: ' +data.sunsign);
           }
@@ -16,7 +19,7 @@ $(document).ready(function() {
 event.preventDefault();
 });
 });
-
+});
 
 
 
