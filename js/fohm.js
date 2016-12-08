@@ -1,5 +1,4 @@
 //TODO: Use a function closure and release global $
-
 $.noConflict();
 (function($) {
 $(document).ready(function() {
@@ -7,21 +6,18 @@ $(document).ready(function() {
     var query = $('#quotelabel').val();
     var urL = 'http://horoscope-api.herokuapp.com/horoscope/today/' + query;
         $.ajax({
-          type: 'GET',
           dataType: 'jsonp',
-          url: urL,
-          success: function(data) {
-            $('#secondary').append(data.horoscope);
+          type: 'GET',
+          url: urL
+        }).done(function(data) {
+            $('#secondary').html(data.horoscope);
             $('#bname').html('Date: ' +data.date);
             $('#qtitle').html('Sunsign: ' +data.sunsign);
-          }
+          });
         });
 event.preventDefault();
 });
 });
-});
-
-
 
 /*
    $('#name_form').on('submit', function(event) {
