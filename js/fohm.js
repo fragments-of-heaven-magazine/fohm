@@ -1,7 +1,7 @@
 //TODO: Use a function closure and release global $
 
 $(document).ready(function() {
-
+/*
    $('#name_form').on('submit', function(event) {
     var nameinput = $('#namelabel').val();
   $.when(
@@ -14,24 +14,27 @@ $(document).ready(function() {
         $('#username').html( 'Hello, ' +nameinput + '! Your inspirational quote is below!');
         });
     event.preventDefault();
-});
+}); */
 
-
-  $('#quote_form').on('submit', function(event2) {
+   $('#quote_form').on('submit', function(event2) {
    var query = $('#quotelabel').val();
-  $.when(
-   $.get(
-    'http://quotes.rest/qod.js?category=' + query,
-  ).then(function(data) {
-      var p = data[0];
-      $('#secondary').html(p.quote);
-      $('#bname').html('By: ' +p.author);
-      $('#qtitle').html(p.title);
-      $('#background').html('<img src="' +p.background +'" alt="An inspiring image"/>');
+   var urL = 'http://horoscope-api.herokuapp.com/horoscope/today/' + query;
+   
+$.ajax({
+    type: 'GET',
+    url: urL,
+    dataType: 'jsonp',
+    success: function(data){
+      $('#secondary').html(data.horoscope);
+      $('#bname').html('Date: ' +data.date);
+      $('#qtitle').html('Sunsign: ' +data.sunsign);
       });
     event2.preventDefault();
-});
+})
 
+    
 }); 
+
+});
 
 
