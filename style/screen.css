@@ -52,7 +52,7 @@ p {
   padding-top: 1.222em;
 }
 
-.get{
+.get {
   padding-top: 1.222em;
 }
 
@@ -69,12 +69,7 @@ p {
   padding-top: 0;
 }
 
-.mail{
-  padding-top: 1.222em;
-  padding-bottom: 0;
-}
-
-#username {
+#number {
   padding-top: 1.222em;
   font-style: italic;
   color: #8357A9;
@@ -88,30 +83,6 @@ p {
 #aname {
   font-style: italic;
   color: #8357A9;
-}
-
-#qtitle {
-  font-style: italic;
-  color: #8357A9;
-}
-
-#secondary {
-  font-style: italic;
-  color: #8357A9;
-}
-
-#bname {
-  font-style: italic;
-  color: #8357A9;
-}
-
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 input[type="text"] {
@@ -174,8 +145,5 @@ footer {
   .purpose {
     width: 43.49%; /*334/768 = 0.4349*/
   }
-
-  .mission {
-    width: 43.49%; /*334/768 = 0.4349*/
-  }
 }
+
