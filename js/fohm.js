@@ -6,7 +6,7 @@ $(document).ready(function() {
         $.ajax({
           type: 'GET',
           url: urL,
-          dataType: 'jsonp'
+          dataType: 'jsonp',
           success: function(data) {
             $('#secondary').html(data.horoscope);
             $('#bname').html('Date: ' +data.date);
