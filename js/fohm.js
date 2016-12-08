@@ -1,6 +1,25 @@
 //TODO: Use a function closure and release global $
-
 $(document).ready(function() {
+  $('#quote_form').on('submit', function(event) {
+      var query = $('#quotelabel').val();
+        var urL = 'http://horoscope-api.herokuapp.com/horoscope/today/' + query;
+        $.ajax({
+          type: 'GET',
+          url: urL,
+          dataType: 'jsonp'
+          success: function(data) {
+            $('#secondary').html(data.horoscope);
+            $('#bname').html('Date: ' +data.date);
+            $('#qtitle').html('Sunsign: ' +data.sunsign);
+          }
+        });
+event.preventDefault();
+});
+});
+
+
+
+
 /*
    $('#name_form').on('submit', function(event) {
     var nameinput = $('#namelabel').val();
@@ -15,26 +34,3 @@ $(document).ready(function() {
         });
     event.preventDefault();
 }); */
-
-   $('#quote_form').on('submit', function(event2) {
-   var query = $('#quotelabel').val();
-   var urL = 'http://horoscope-api.herokuapp.com/horoscope/today/' + query;
-   
-$.ajax({
-    type: 'GET',
-    url: urL,
-    dataType: 'jsonp',
-    success: function(data){
-      $('#secondary').html(data.horoscope);
-      $('#bname').html('Date: ' +data.date);
-      $('#qtitle').html('Sunsign: ' +data.sunsign);
-      });
-    event2.preventDefault();
-})
-
-    
-}); 
-
-});
-
-
